@@ -8,6 +8,7 @@
 
 #import "MenuViewController.h"
 #import "UsersViewController.h"
+#import "ProfileViewController.h"
 
 @interface MenuViewController ()
 
@@ -46,8 +47,12 @@
 }
 
 - (IBAction)onFindMenteesButton:(id)sender {
+    UsersViewController *uvc = [[UsersViewController alloc] init];
+    [self.navigationController pushViewController:uvc animated:NO];
 }
 
 - (IBAction)onProfileButton:(id)sender {
+    ProfileViewController *pvc = [[ProfileViewController alloc] init];
+    [self.navigationController pushViewController:pvc animated:NO];
 }
 @end
