@@ -19,6 +19,10 @@
 		905873A3192AFC6C009998B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9058738B192AFC6C009998B1 /* UIKit.framework */; };
 		905873AB192AFC6C009998B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 905873A9192AFC6C009998B1 /* InfoPlist.strings */; };
 		905873AD192AFC6C009998B1 /* WWCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 905873AC192AFC6C009998B1 /* WWCTests.m */; };
+		905873B9192AFE4C009998B1 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905873B7192AFE4C009998B1 /* MenuViewController.m */; };
+		905873BA192AFE4C009998B1 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 905873B8192AFE4C009998B1 /* MenuViewController.xib */; };
+		905873BF192B0167009998B1 /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905873BD192B0167009998B1 /* UsersViewController.m */; };
+		905873C0192B0167009998B1 /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 905873BE192B0167009998B1 /* UsersViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		905873A8192AFC6C009998B1 /* WWCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WWCTests-Info.plist"; sourceTree = "<group>"; };
 		905873AA192AFC6C009998B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		905873AC192AFC6C009998B1 /* WWCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWCTests.m; sourceTree = "<group>"; };
+		905873B6192AFE4C009998B1 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = "View Controllers/MenuViewController.h"; sourceTree = "<group>"; };
+		905873B7192AFE4C009998B1 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = "View Controllers/MenuViewController.m"; sourceTree = "<group>"; };
+		905873B8192AFE4C009998B1 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuViewController.xib; path = "View Controllers/MenuViewController.xib"; sourceTree = "<group>"; };
+		905873BC192B0167009998B1 /* UsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersViewController.h; sourceTree = "<group>"; };
+		905873BD192B0167009998B1 /* UsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersViewController.m; sourceTree = "<group>"; };
+		905873BE192B0167009998B1 /* UsersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsersViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,7 @@
 			children = (
 				90587396192AFC6C009998B1 /* AppDelegate.h */,
 				90587397192AFC6C009998B1 /* AppDelegate.m */,
+				905873BB192AFE57009998B1 /* View Controllers */,
 				90587399192AFC6C009998B1 /* Images.xcassets */,
 				9058738E192AFC6C009998B1 /* Supporting Files */,
 			);
@@ -142,6 +153,19 @@
 				905873A9192AFC6C009998B1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		905873BB192AFE57009998B1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				905873B6192AFE4C009998B1 /* MenuViewController.h */,
+				905873B7192AFE4C009998B1 /* MenuViewController.m */,
+				905873B8192AFE4C009998B1 /* MenuViewController.xib */,
+				905873BC192B0167009998B1 /* UsersViewController.h */,
+				905873BD192B0167009998B1 /* UsersViewController.m */,
+				905873BE192B0167009998B1 /* UsersViewController.xib */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				90587392192AFC6C009998B1 /* InfoPlist.strings in Resources */,
+				905873C0192B0167009998B1 /* UsersViewController.xib in Resources */,
+				905873BA192AFE4C009998B1 /* MenuViewController.xib in Resources */,
 				9058739A192AFC6C009998B1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				90587398192AFC6C009998B1 /* AppDelegate.m in Sources */,
+				905873BF192B0167009998B1 /* UsersViewController.m in Sources */,
+				905873B9192AFE4C009998B1 /* MenuViewController.m in Sources */,
 				90587394192AFC6C009998B1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
