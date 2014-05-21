@@ -15,6 +15,8 @@
 - (IBAction)onFindMentorsButton:(id)sender;
 - (IBAction)onFindMenteesButton:(id)sender;
 - (IBAction)onProfileButton:(id)sender;
+- (IBAction)onMentorsButton:(id)sender;
+- (IBAction)onMenteesButton:(id)sender;
 
 @end
 
@@ -54,5 +56,17 @@
 - (IBAction)onProfileButton:(id)sender {
     ProfileViewController *pvc = [[ProfileViewController alloc] init];
     [self.navigationController pushViewController:pvc animated:NO];
+}
+
+- (IBAction)onMentorsButton:(id)sender {
+    UsersViewController *uvc = [[UsersViewController alloc] init];
+    [self.navigationController pushViewController:uvc animated:NO];
+
+}
+
+- (IBAction)onMenteesButton:(id)sender {
+    UsersViewController *uvc = [[UsersViewController alloc] init];
+    [self.navigationController pushViewController:uvc animated:NO];
+
 }
 @end

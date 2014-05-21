@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MenuViewController.h"
+#import "LoginViewController.h"
 
 @implementation AppDelegate
 
@@ -16,7 +17,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     MenuViewController *mvc = [[MenuViewController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:mvc];
+    LoginViewController *lvc = [[LoginViewController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:lvc];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
