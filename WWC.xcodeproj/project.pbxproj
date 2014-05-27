@@ -25,6 +25,10 @@
 		905873C0192B0167009998B1 /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 905873BE192B0167009998B1 /* UsersViewController.xib */; };
 		905873C4192B0593009998B1 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905873C2192B0593009998B1 /* ProfileViewController.m */; };
 		905873C5192B0593009998B1 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 905873C3192B0593009998B1 /* ProfileViewController.xib */; };
+		90AAE624192C829600D0D763 /* ProfileFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAE622192C829600D0D763 /* ProfileFormViewController.m */; };
+		90AAE625192C829600D0D763 /* ProfileFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90AAE623192C829600D0D763 /* ProfileFormViewController.xib */; };
+		90AAE629192C82A500D0D763 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAE627192C82A500D0D763 /* LoginViewController.m */; };
+		90AAE62A192C82A500D0D763 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90AAE628192C82A500D0D763 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +61,18 @@
 		905873B6192AFE4C009998B1 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = "View Controllers/MenuViewController.h"; sourceTree = "<group>"; };
 		905873B7192AFE4C009998B1 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = "View Controllers/MenuViewController.m"; sourceTree = "<group>"; };
 		905873B8192AFE4C009998B1 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuViewController.xib; path = "View Controllers/MenuViewController.xib"; sourceTree = "<group>"; };
-		905873BC192B0167009998B1 /* UsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersViewController.h; sourceTree = "<group>"; };
-		905873BD192B0167009998B1 /* UsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersViewController.m; sourceTree = "<group>"; };
-		905873BE192B0167009998B1 /* UsersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsersViewController.xib; sourceTree = "<group>"; };
-		905873C1192B0593009998B1 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
-		905873C2192B0593009998B1 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		905873C3192B0593009998B1 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		905873BC192B0167009998B1 /* UsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UsersViewController.h; path = "View Controllers/UsersViewController.h"; sourceTree = "<group>"; };
+		905873BD192B0167009998B1 /* UsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UsersViewController.m; path = "View Controllers/UsersViewController.m"; sourceTree = "<group>"; };
+		905873BE192B0167009998B1 /* UsersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UsersViewController.xib; path = "View Controllers/UsersViewController.xib"; sourceTree = "<group>"; };
+		905873C1192B0593009998B1 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = "View Controllers/ProfileViewController.h"; sourceTree = "<group>"; };
+		905873C2192B0593009998B1 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = "View Controllers/ProfileViewController.m"; sourceTree = "<group>"; };
+		905873C3192B0593009998B1 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileViewController.xib; path = "View Controllers/ProfileViewController.xib"; sourceTree = "<group>"; };
+		90AAE621192C829600D0D763 /* ProfileFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileFormViewController.h; path = "View Controllers/ProfileFormViewController.h"; sourceTree = "<group>"; };
+		90AAE622192C829600D0D763 /* ProfileFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileFormViewController.m; path = "View Controllers/ProfileFormViewController.m"; sourceTree = "<group>"; };
+		90AAE623192C829600D0D763 /* ProfileFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileFormViewController.xib; path = "View Controllers/ProfileFormViewController.xib"; sourceTree = "<group>"; };
+		90AAE626192C82A500D0D763 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = "View Controllers/LoginViewController.h"; sourceTree = "<group>"; };
+		90AAE627192C82A500D0D763 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = "View Controllers/LoginViewController.m"; sourceTree = "<group>"; };
+		90AAE628192C82A500D0D763 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = "View Controllers/LoginViewController.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +177,12 @@
 				905873B7192AFE4C009998B1 /* MenuViewController.m */,
 				905873B8192AFE4C009998B1 /* MenuViewController.xib */,
 				905873BC192B0167009998B1 /* UsersViewController.h */,
+				90AAE626192C82A500D0D763 /* LoginViewController.h */,
+				90AAE627192C82A500D0D763 /* LoginViewController.m */,
+				90AAE628192C82A500D0D763 /* LoginViewController.xib */,
+				90AAE621192C829600D0D763 /* ProfileFormViewController.h */,
+				90AAE622192C829600D0D763 /* ProfileFormViewController.m */,
+				90AAE623192C829600D0D763 /* ProfileFormViewController.xib */,
 				905873BD192B0167009998B1 /* UsersViewController.m */,
 				905873BE192B0167009998B1 /* UsersViewController.xib */,
 				905873C1192B0593009998B1 /* ProfileViewController.h */,
@@ -251,10 +267,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90AAE625192C829600D0D763 /* ProfileFormViewController.xib in Resources */,
 				90587392192AFC6C009998B1 /* InfoPlist.strings in Resources */,
 				905873C0192B0167009998B1 /* UsersViewController.xib in Resources */,
 				905873BA192AFE4C009998B1 /* MenuViewController.xib in Resources */,
 				905873C5192B0593009998B1 /* ProfileViewController.xib in Resources */,
+				90AAE62A192C82A500D0D763 /* LoginViewController.xib in Resources */,
 				9058739A192AFC6C009998B1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +296,8 @@
 				905873BF192B0167009998B1 /* UsersViewController.m in Sources */,
 				905873B9192AFE4C009998B1 /* MenuViewController.m in Sources */,
 				90587394192AFC6C009998B1 /* main.m in Sources */,
+				90AAE629192C82A500D0D763 /* LoginViewController.m in Sources */,
+				90AAE624192C829600D0D763 /* ProfileFormViewController.m in Sources */,
 				905873C4192B0593009998B1 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +495,7 @@
 				905873B2192AFC6C009998B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		905873B3192AFC6C009998B1 /* Build configuration list for PBXNativeTarget "WWCTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +504,7 @@
 				905873B5192AFC6C009998B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

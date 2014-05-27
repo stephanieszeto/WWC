@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B48ADB11-CAA1-4E04-B2A1-85A79153E126</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WWC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B4B47FCC-3451-4BE0-8186-D103DF4FB0EA</key>
+		<string>ssh://github.com/stephanieszeto/WWC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WWC.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B4B47FCC-3451-4BE0-8186-D103DF4FB0EA</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/stephanieszeto/WWC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B4B47FCC-3451-4BE0-8186-D103DF4FB0EA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B4B47FCC-3451-4BE0-8186-D103DF4FB0EA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WWC</string>
+		</dict>
+	</array>
+</dict>
+</plist>
