@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 #import "UsersViewController.h"
 #import "ProfileViewController.h"
+#import "LoginViewController.h"
 
 @interface MenuViewController ()
 
@@ -34,7 +35,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning

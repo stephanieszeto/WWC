@@ -14,6 +14,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    // set up Parse
+    [Parse setApplicationId:@"HAsRA0rfixoHXqehmRV6Cl5KdN2kvyzBLlBZyXqj"
+                  clientKey:@"aJVjaRNzDu5A3zDVMaSisjokM0yXW4TRzbNYVNrA"];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     MenuViewController *mvc = [[MenuViewController alloc] init];
