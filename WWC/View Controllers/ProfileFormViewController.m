@@ -39,9 +39,9 @@
 }
 
 - (IBAction)onSubmitButton:(id)sender {
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    testObject[@"foo"] = @"bar";
-    [testObject saveInBackground];
+    //PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    //testObject[@"foo"] = @"bar";
+    //[testObject saveInBackground];
     
     MenuViewController *mvc = [[MenuViewController alloc] init];
     [self.navigationController pushViewController:mvc animated:NO];
