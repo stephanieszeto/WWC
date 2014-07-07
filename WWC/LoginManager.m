@@ -87,6 +87,10 @@
     NSLog(@"User dismissed the SignUpViewController");
 }
 
+- (void)login {
+    
+}
+
 - (void)logout {
     [PFUser logOut];
     [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:kUserDidLogoutNotification object:self]];

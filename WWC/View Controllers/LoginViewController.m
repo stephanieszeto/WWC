@@ -40,6 +40,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // set up buttons
+    //[self.logInView.facebookButton setImage:nil forState:UIControlStateNormal];
+    //[self.logInView.facebookButton setImage:nil forState:UIControlStateHighlighted];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,7 +60,6 @@
 - (IBAction)onFindMenteeButton:(id)sender {
     ProfileFormViewController *pfvc = [[ProfileFormViewController alloc] init];
     [self.navigationController pushViewController:pfvc animated:NO];
-
 }
 
 @end
