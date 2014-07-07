@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 
+static NSString *kUserDidLoginNotification = @"com.wwc.userdidlogin";
+static NSString *kUserDidSignupNotification = @"com.wwc.userdidsignup";
+static NSString *kUserDidLogoutNotification = @"com.wwc.userdidlogout";
+
 @interface LoginManager : NSObject <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 
 + (LoginManager *)instance;

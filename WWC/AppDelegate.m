@@ -22,8 +22,9 @@
                   clientKey:@"aJVjaRNzDu5A3zDVMaSisjokM0yXW4TRzbNYVNrA"];
     [PFFacebookUtils initializeFacebook];
     
-    // set up root view controller
+    // set up root view controller, notifications
     [self setRootViewController];
+    [self subscribeToNotifications];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -64,6 +65,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [self unsubscribeToNotifications];
 }
 
 # pragma mark - Private methods
@@ -86,6 +88,18 @@
         
         self.window.rootViewController = loginVC;
     }
+}
+
+- (void)subscribeToNotifications {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setRootViewController) name:kUserDidLoginNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setRootViewController) name:kUserDidLogoutNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setRootViewController) name:kUserDidSignupNotification object:nil];
+}
+
+- (void)unsubscribeToNotifications {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kUserDidLoginNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kUserDidLogoutNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kUserDidSignupNotification object:nil];
 }
 
 @end

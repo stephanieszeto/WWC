@@ -35,8 +35,7 @@
 // Sent to the delegate when a PFUser is logged in.
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
     NSLog(@"User logged in");
-    //[[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:kUserDidLoginNotification object:self]];
-    //[self dismissViewControllerAnimated:YES completion:NULL];
+    [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:kUserDidLoginNotification object:self]];
 }
 
 // Sent to the delegate when the log in attempt fails.
@@ -75,8 +74,7 @@
 // Sent to the delegate when a PFUser is signed up.
 - (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user {
     NSLog(@"User signed up");
-    //[[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:kUserDidSignupNotification object:self]];
-    //[self dismissViewControllerAnimated:YES completion:NULL];
+    [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:kUserDidSignupNotification object:self]];
 }
 
 // Sent to the delegate when the sign up attempt fails.
@@ -89,9 +87,9 @@
     NSLog(@"User dismissed the SignUpViewController");
 }
 
-- (void) logout {
+- (void)logout {
     [PFUser logOut];
-    //[[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:kUserDidLogoutNotification object:self]];
+    [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:kUserDidLogoutNotification object:self]];
 }
 
 @end
