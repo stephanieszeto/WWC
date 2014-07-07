@@ -87,7 +87,7 @@
         loginVC.delegate = loginManager;
         loginVC.signUpController = signUpVC;
         loginVC.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsFacebook | PFLogInFieldsSignUpButton | PFLogInFieldsDismissButton;
-        [loginVC setFacebookPermissions:[NSArray arrayWithObjects:@"friends_about_me", nil]];
+        [loginVC setFacebookPermissions:@[@"public_profile", @"email", @"friends_about_me"]];
         
         self.window.rootViewController = loginVC;
     }
