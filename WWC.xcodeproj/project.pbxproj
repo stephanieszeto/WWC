@@ -25,6 +25,10 @@
 		905873C0192B0167009998B1 /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 905873BE192B0167009998B1 /* UsersViewController.xib */; };
 		905873C4192B0593009998B1 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905873C2192B0593009998B1 /* ProfileViewController.m */; };
 		905873C5192B0593009998B1 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 905873C3192B0593009998B1 /* ProfileViewController.xib */; };
+		905FBCFA1969E2B5003580F4 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 905FBCF91969E2B5003580F4 /* libz.1.1.3.dylib */; };
+		905FBCFC1969E42D003580F4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905FBCFB1969E42D003580F4 /* Social.framework */; };
+		905FBCFF196A4EC7003580F4 /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FBCFE196A4EC7003580F4 /* LoginManager.m */; };
+		905FBD02196A5671003580F4 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FBD01196A5671003580F4 /* SignUpViewController.m */; };
 		90AAE624192C829600D0D763 /* ProfileFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAE622192C829600D0D763 /* ProfileFormViewController.m */; };
 		90AAE625192C829600D0D763 /* ProfileFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90AAE623192C829600D0D763 /* ProfileFormViewController.xib */; };
 		90AAE629192C82A500D0D763 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAE627192C82A500D0D763 /* LoginViewController.m */; };
@@ -78,6 +82,12 @@
 		905873C1192B0593009998B1 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = "View Controllers/ProfileViewController.h"; sourceTree = "<group>"; };
 		905873C2192B0593009998B1 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = "View Controllers/ProfileViewController.m"; sourceTree = "<group>"; };
 		905873C3192B0593009998B1 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileViewController.xib; path = "View Controllers/ProfileViewController.xib"; sourceTree = "<group>"; };
+		905FBCF91969E2B5003580F4 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		905FBCFB1969E42D003580F4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		905FBCFD196A4EC7003580F4 /* LoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginManager.h; sourceTree = "<group>"; };
+		905FBCFE196A4EC7003580F4 /* LoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginManager.m; sourceTree = "<group>"; };
+		905FBD00196A5671003580F4 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = "View Controllers/SignUpViewController.h"; sourceTree = "<group>"; };
+		905FBD01196A5671003580F4 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = "View Controllers/SignUpViewController.m"; sourceTree = "<group>"; };
 		90AAE621192C829600D0D763 /* ProfileFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileFormViewController.h; path = "View Controllers/ProfileFormViewController.h"; sourceTree = "<group>"; };
 		90AAE622192C829600D0D763 /* ProfileFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileFormViewController.m; path = "View Controllers/ProfileFormViewController.m"; sourceTree = "<group>"; };
 		90AAE623192C829600D0D763 /* ProfileFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileFormViewController.xib; path = "View Controllers/ProfileFormViewController.xib"; sourceTree = "<group>"; };
@@ -102,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				905FBCFC1969E42D003580F4 /* Social.framework in Frameworks */,
+				905FBCFA1969E2B5003580F4 /* libz.1.1.3.dylib in Frameworks */,
 				90B5EEAC1935B3B500815210 /* SystemConfiguration.framework in Frameworks */,
 				90B5EEAA1935B3AB00815210 /* StoreKit.framework in Frameworks */,
 				90B5EEA81935B3A100815210 /* Security.framework in Frameworks */,
@@ -154,6 +166,8 @@
 		90587386192AFC6C009998B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				905FBCFB1969E42D003580F4 /* Social.framework */,
+				905FBCF91969E2B5003580F4 /* libz.1.1.3.dylib */,
 				90F99276193D8FE900951190 /* FacebookSDK.framework */,
 				90B5EEAB1935B3B500815210 /* SystemConfiguration.framework */,
 				90B5EEA91935B3AB00815210 /* StoreKit.framework */,
@@ -181,6 +195,8 @@
 				905873BB192AFE57009998B1 /* View Controllers */,
 				90587399192AFC6C009998B1 /* Images.xcassets */,
 				9058738E192AFC6C009998B1 /* Supporting Files */,
+				905FBCFD196A4EC7003580F4 /* LoginManager.h */,
+				905FBCFE196A4EC7003580F4 /* LoginManager.m */,
 			);
 			path = WWC;
 			sourceTree = "<group>";
@@ -232,6 +248,8 @@
 				905873C1192B0593009998B1 /* ProfileViewController.h */,
 				905873C2192B0593009998B1 /* ProfileViewController.m */,
 				905873C3192B0593009998B1 /* ProfileViewController.xib */,
+				905FBD00196A5671003580F4 /* SignUpViewController.h */,
+				905FBD01196A5671003580F4 /* SignUpViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -341,8 +359,10 @@
 				905873B9192AFE4C009998B1 /* MenuViewController.m in Sources */,
 				90587394192AFC6C009998B1 /* main.m in Sources */,
 				90AAE629192C82A500D0D763 /* LoginViewController.m in Sources */,
+				905FBCFF196A4EC7003580F4 /* LoginManager.m in Sources */,
 				90AAE624192C829600D0D763 /* ProfileFormViewController.m in Sources */,
 				905873C4192B0593009998B1 /* ProfileViewController.m in Sources */,
+				905FBD02196A5671003580F4 /* SignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

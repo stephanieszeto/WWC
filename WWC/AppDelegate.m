@@ -7,23 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginManager.h"
 #import "MenuViewController.h"
 #import "LoginViewController.h"
+#import "SignUpViewController.h"
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    
-    // set up Parse
-    [Parse setApplicationId:@"HAsRA0rfixoHXqehmRV6Cl5KdN2kvyzBLlBZyXqj"
-                  clientKey:@"aJVjaRNzDu5A3zDVMaSisjokM0yXW4TRzbNYVNrA"];
-    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    MenuViewController *mvc = [[MenuViewController alloc] init];
-    LoginViewController *lvc = [[LoginViewController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:lvc];
+    // set up Parse, Facebook
+    [Parse setApplicationId:@"HAsRA0rfixoHXqehmRV6Cl5KdN2kvyzBLlBZyXqj"
+                  clientKey:@"aJVjaRNzDu5A3zDVMaSisjokM0yXW4TRzbNYVNrA"];
+    [PFFacebookUtils initializeFacebook];
+    
+    // set up root view controller
+    [self setRootViewController];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -64,6 +64,28 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+# pragma mark - Private methods
+
+- (void)setRootViewController {
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        MenuViewController *menuVC = [[MenuViewController alloc] init];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:menuVC];
+        self.window.rootViewController = navigationController;
+    } else {
+        LoginManager *loginManager = [LoginManager instance];
+        
+        SignUpViewController *signUpVC = [[SignUpViewController alloc] init];
+        signUpVC.delegate = loginManager;
+        
+        LoginViewController *loginVC = [[LoginViewController alloc] init];
+        loginVC.delegate = loginManager;
+        loginVC.signUpController = signUpVC;
+        
+        self.window.rootViewController = loginVC;
+    }
 }
 
 @end

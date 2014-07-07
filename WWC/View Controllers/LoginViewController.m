@@ -27,10 +27,19 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    // hide navigation bar
+    self.navigationController.navigationBarHidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    // unhide navigation bar
+    self.navigationController.navigationBarHidden = NO;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning

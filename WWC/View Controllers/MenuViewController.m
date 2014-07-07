@@ -10,6 +10,7 @@
 #import "UsersViewController.h"
 #import "ProfileViewController.h"
 #import "LoginViewController.h"
+#import "LoginManager.h"
 
 @interface MenuViewController ()
 
@@ -35,12 +36,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // set up navigation bar
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Log Out" style:UIBarButtonItemStylePlain target:self action:@selector(onLogOut:)];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+# pragma mark - Navigational methods
+
+- (void)onLogOut:(id)sender {
+    LoginManager *loginManager = [LoginManager instance];
+    [loginManager logout];
 }
 
 - (IBAction)onFindMentorsButton:(id)sender {
