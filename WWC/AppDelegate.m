@@ -77,7 +77,7 @@
 # pragma mark - Private methods
 
 - (void)setRootViewController {
-    User *currentUser = (User *)[PFUser currentUser];
+    User *currentUser = [User currentUser];
     if (currentUser) {
         MenuViewController *menuVC = [[MenuViewController alloc] init];
         UINavigationController *menuNC = [[UINavigationController alloc] initWithRootViewController:menuVC];

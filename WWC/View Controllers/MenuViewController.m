@@ -11,8 +11,11 @@
 #import "ProfileViewController.h"
 #import "LoginViewController.h"
 #import "LoginManager.h"
+#import "User.h"
 
 @interface MenuViewController ()
+
+@property (nonatomic, strong) User *user;
 
 - (IBAction)onFindMentorsButton:(id)sender;
 - (IBAction)onFindMenteesButton:(id)sender;
@@ -36,6 +39,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // check if user info populated
+    User *currentUser = [User currentUser];
+    [currentUser fetchUserData];
+    self.user = currentUser;
     
     // set up navigation bar
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Log Out" style:UIBarButtonItemStylePlain target:self action:@selector(onLogOut:)];
