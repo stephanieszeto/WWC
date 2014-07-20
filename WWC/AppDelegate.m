@@ -9,14 +9,19 @@
 #import "AppDelegate.h"
 #import "LoginManager.h"
 #import "MenuViewController.h"
+#import "ProfileFormViewController.h"
 #import "LoginViewController.h"
 #import "SignUpViewController.h"
+#import "User.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
+    // register subclass
+    [User registerSubclass];
+    
     // set up Parse, Facebook
     [Parse setApplicationId:@"HAsRA0rfixoHXqehmRV6Cl5KdN2kvyzBLlBZyXqj"
                   clientKey:@"aJVjaRNzDu5A3zDVMaSisjokM0yXW4TRzbNYVNrA"];
@@ -72,22 +77,23 @@
 # pragma mark - Private methods
 
 - (void)setRootViewController {
-    PFUser *currentUser = [PFUser currentUser];
+    User *currentUser = (User *)[PFUser currentUser];
     if (currentUser) {
         MenuViewController *menuVC = [[MenuViewController alloc] init];
-        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:menuVC];
-        self.window.rootViewController = navigationController;
+        UINavigationController *menuNC = [[UINavigationController alloc] initWithRootViewController:menuVC];
+        self.window.rootViewController = menuNC;
     } else {
         LoginManager *loginManager = [LoginManager instance];
         
         SignUpViewController *signUpVC = [[SignUpViewController alloc] init];
         signUpVC.delegate = loginManager;
+        //signUpVC.fields = PFSignUpFieldsDefault;
         
         LoginViewController *loginVC = [[LoginViewController alloc] init];
         loginVC.delegate = loginManager;
         loginVC.signUpController = signUpVC;
         loginVC.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsFacebook | PFLogInFieldsSignUpButton | PFLogInFieldsDismissButton;
-        [loginVC setFacebookPermissions:@[@"public_profile", @"email", @"friends_about_me"]];
+        [loginVC setFacebookPermissions:@[@"public_profile", @"email", @"user_location", @"user_about_me", @"user_work_history"]];
         
         self.window.rootViewController = loginVC;
     }
