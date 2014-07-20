@@ -25,6 +25,7 @@ typedef NS_ENUM(NSInteger, UserType) {
 @property (nonatomic, assign) NSInteger gender;
 @property (nonatomic, assign) NSInteger type;
 @property (nonatomic, strong) NSString *email;
+@property (nonatomic, assign) NSInteger facebookID;
 @property (retain) PFFile *cover;
 
 - (void)fetchUserData;

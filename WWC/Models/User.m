@@ -10,11 +10,12 @@
 
 @implementation User
 
-@synthesize name;
-@synthesize gender;
-@synthesize email;
-@synthesize type;
-@synthesize cover;
+@dynamic name;
+@dynamic gender;
+@dynamic email;
+@dynamic type;
+@dynamic facebookID;
+@dynamic cover;
 
 # pragma mark - Public methods
 
@@ -46,6 +47,7 @@
             // save values
             self.email = result[@"email"];
             self.name = result[@"name"];
+            self.facebookID = (NSInteger) result[@"id"];
             
             if ([result[@"gender"] isEqualToString:@"male"]) {
                 self.gender = UserGenderMale;
@@ -82,6 +84,7 @@
     user[@"email"] = self.email;
     user[@"name"] = self.name;
     user[@"gender"] = @(self.gender);
+    user[@"facebookID"] = @(self.facebookID);
     [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
             NSLog(@"Success: user saved");
